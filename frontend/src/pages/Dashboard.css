@@ -1,0 +1,89 @@
+.dashboard { max-width: 1100px; }
+.dashboard-title { font-size: 28px; }
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: border-color 0.2s;
+}
+.stat-card:hover { border-color: var(--border2); }
+
+.stat-icon {
+  width: 44px; height: 44px;
+  background: color-mix(in srgb, var(--stat-color) 12%, transparent);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--stat-color);
+  flex-shrink: 0;
+}
+
+.stat-value {
+  font-family: 'Syne', sans-serif;
+  font-size: 26px; font-weight: 800;
+  color: var(--text); line-height: 1;
+}
+.stat-label { font-size: 12px; color: var(--text2); margin-top: 4px; }
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+.recent-card { grid-column: 1 / -1; }
+
+.section-title { font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+
+.progress-wrap {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 20px;
+}
+.progress-bar-bg {
+  flex: 1; height: 8px; background: var(--bg4); border-radius: 4px; overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 4px; transition: width 0.6s ease;
+}
+.progress-pct { font-size: 13px; font-weight: 600; color: var(--accent2); min-width: 32px; text-align: right; }
+
+.status-breakdown { display: flex; flex-direction: column; gap: 10px; }
+.status-row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 13px; color: var(--text2);
+}
+
+.user-task-list { display: flex; flex-direction: column; gap: 12px; }
+.user-task-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.mini-avatar {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--accent-glow); color: var(--accent2);
+  font-size: 12px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.user-bar-bg { width: 80px; height: 6px; background: var(--bg4); border-radius: 3px; overflow: hidden; }
+.user-bar-fill { height: 100%; background: var(--accent); border-radius: 3px; }
+
+.recent-tasks { display: flex; flex-direction: column; gap: 2px; }
+.recent-task-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 12px; border-radius: var(--radius-sm); gap: 16px;
+  transition: background 0.15s;
+}
+.recent-task-row:hover { background: var(--bg3); }
+
+@media (max-width: 768px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .recent-card { grid-column: 1; }
+}
