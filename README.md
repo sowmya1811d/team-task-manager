@@ -1,6 +1,12 @@
 # TaskFlow — Team Task Manager
 
-A full-stack collaborative task management web application. Think of it as a simplified Trello/Asana where teams can create projects, assign tasks, and track progress — with role-based access control.
+TaskFlow is a full-stack web application that helps teams organize and 
+manage their work efficiently. Users can sign up, create projects, and 
+collaborate with team members. Admins have full control to create tasks, 
+assign them to members, set priorities and deadlines, and manage the team. 
+Members can view and update the status of their assigned tasks. The 
+dashboard provides a real-time overview of task progress, overdue items, 
+and workload distribution across the team.
 
 ---
 
