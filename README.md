@@ -6,8 +6,8 @@ A full-stack collaborative task management web application. Think of it as a sim
 
 ## 🚀 Live Demo
 
-> **Deployed URL:** `https://your-app.railway.app`  
-> *(Replace with your Railway URL after deployment)*
+> **Deployed URL:** `https://team-task-manager-production-7501.up.railway.app`
+
 
 ---
 
@@ -83,7 +83,7 @@ team-task-manager/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/team-task-manager.git
+git clone https://github.com/sowmya1811d/team-task-manager.git
 cd team-task-manager
 ```
 
@@ -119,7 +119,7 @@ The frontend Vite dev server proxies `/api` requests to `localhost:5000`.
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/team-task-manager.git
+git remote add origin https://github.com/sowmya1811d/team-task-manager.git
 git push -u origin main
 ```
 
