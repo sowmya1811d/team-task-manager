@@ -214,6 +214,8 @@ tasks          (id, title, description, status, priority, due_date,
 
 ## 👤 Author
 
+**Manasa Sowmya Dasari**
+
 Built as a full-stack coding assignment demonstrating:
 - RESTful API design
 - JWT authentication
